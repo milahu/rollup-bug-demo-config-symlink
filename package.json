@@ -1,0 +1,11 @@
+{
+  "name": "rollup-bug-demo-config-symlink",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "bash test.sh"
+  },
+  "dependencies": {
+    "rollup": "^2.26.11"
+  }
+}
