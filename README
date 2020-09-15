@@ -1,3 +1,21 @@
 run:
 
+git clone --depth=1 https://github.com/milahu/rollup-bug-demo-config-symlink.git
+cd rollup-bug-demo-config-symlink
+npm install
 npm run test
+
+error:
+
+[!] SyntaxError: Cannot use import statement outside a module
+
+rollup.config.js.MOVED:2
+import fs from 'fs';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+
+problem:
+
+the symlink rollup.config.js is resolved to rollup.config.js.MOVED
+and the file extension *.MOVED is not recognized as a *.js file
