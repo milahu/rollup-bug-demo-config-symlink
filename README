@@ -19,3 +19,7 @@ problem:
 
 the symlink rollup.config.js is resolved to rollup.config.js.MOVED
 and the file extension *.MOVED is not recognized as a *.js file
+
+desired result:
+
+the symlink should be treated by the symlink file name, not by the target file name
